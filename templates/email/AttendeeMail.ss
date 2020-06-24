@@ -50,9 +50,11 @@
                                                         <a class="ticket-action" href="{$AbsoluteBaseURL}{$Event.Controller.CurrentDate.ICSLink}" style="margin: 0 .25rem 0 0;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;box-sizing: border-box;color: #348eda;text-decoration: none;padding: .5rem 0 0 0;">
                                                             <img src="{$AbsoluteBaseURL}event-tickets/images/mail-icon-add.png" alt="<%t TicketEmail.Agenda 'Agenda' %>" height="16px" style="margin: 0;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;box-sizing: border-box;max-width: 100%;">
                                                         </a>
+                                                        <% if $TicketFile %>
                                                         <a class="ticket-action" href="$TicketFile.Link" style="margin: 0 .25rem 0 0;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;box-sizing: border-box;color: #348eda;text-decoration: none;padding: .5rem 0 0 0;">
                                                             <img src="{$AbsoluteBaseURL}event-tickets/images/mail-icon-print.png" alt="<%t TicketEmail.Print 'Print' %>" height="16px" style="margin: 0;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;box-sizing: border-box;max-width: 100%;">
                                                         </a>
+                                                        <% end_if %>
                                                         <a class="ticket-action" href="$Event.FacebookShareLink" style="margin: 0 .25rem 0 0;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;box-sizing: border-box;color: #348eda;text-decoration: none;padding: .5rem 0 0 0;">
                                                             <img src="{$AbsoluteBaseURL}event-tickets/images/mail-icon-facebook.png" alt="<%t TicketEmail.Share 'Share' %>" height="16px" style="margin: 0;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;box-sizing: border-box;max-width: 100%;">
                                                         </a>

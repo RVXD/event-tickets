@@ -210,11 +210,11 @@ class Attendee extends DataObject
         if (
             $this->getEmail()
             && $this->getName()
-            && !$this->TicketFile()->exists()
+            //&& !$this->TicketFile()->exists()
             && !$this->TicketQRCode()->exists()
         ) {
             $this->createQRCode();
-            $this->createTicketFile();
+            //$this->createTicketFile();
         }
 
         if ($fields = $this->Fields()) {
